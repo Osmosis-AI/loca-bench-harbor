@@ -14,10 +14,13 @@ jobs:
 
       # Osmosis-AI/harbor is public, so no token is needed here. If it is ever
       # made private, add: token: ${{ secrets.HARBOR_RO_TOKEN }}
+      # The adapter normally lives on the `adapters` branch. While it is still
+      # on a feature branch, the repository variable HARBOR_REF overrides the
+      # ref; delete the variable once the adapter PR has merged.
       - uses: actions/checkout@v4
         with:
           repository: Osmosis-AI/harbor
-          ref: adapters
+          ref: ${{ vars.HARBOR_REF || 'adapters' }}
           path: harbor
 
       - uses: astral-sh/setup-uv@v5
