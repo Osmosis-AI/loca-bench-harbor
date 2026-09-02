@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dataset": {
     "name": "loca-bench",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "task_count": 525,
     "git_commit": null
   },
@@ -12,12 +12,13 @@
   },
   "adapter": {
     "repository": "Osmosis-AI/harbor",
+    "commit": "8a71f5fd8c4210ebb02e9178bb65e3b6e505e5c3",
     "contract_version": 1,
-    "agent": "loca-official-react@1.0.0+loca.8b6fac49",
+    "agent": "loca-official-react@1.1.0+loca.8b6fac49",
     "result_task_name_prefix": "osmosis-ai/loca-bench__"
   },
   "runtime": {
-    "image": "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968",
+    "image": "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b",
     "task_index_sha256": "75b60fef94b54d59bd3cd0a0d5c065e40a0fa959a5661ccabe20e6a81ea330f2"
   },
   "matrix": {

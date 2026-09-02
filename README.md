@@ -10,11 +10,13 @@ tree against the adapter.
 
 ## Status
 
-`v1.0.0` is generated against
-`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968`
+`v1.1.0` is generated against
+`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b`
 (multi-arch index: linux/amd64 + linux/arm64) from `Osmosis-AI/harbor`
-`adapters/loca-bench` at commit `3f0354c0f`. The manifest in `manifests/`
-records the same values.
+`adapters/loca-bench` at commit `8a71f5fd8` (harness `1.1.0+loca.8b6fac49`,
+which adds the OpenAI-native payload mode for direct OpenAI routes). The
+manifest in `manifests/` records the same values. `v1.0.0` remains valid for
+runs against gateways that accept the upstream payload.
 ## Layout
 
 ```
