@@ -1,0 +1,43 @@
+schema_version = "1.4"
+source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703b74ea255357c3ec"
+
+[task]
+name = "osmosis-ai/loca-bench__loca__canvas-arrange-exam__edl-128k__seed-0042"
+version = "1.0.0"
+description = "LOCA-bench CanvasArrangeExamS2LEnv at 128K EDL, seed 42"
+keywords = ["loca-bench", "long-context", "tool-use", "react"]
+
+[metadata]
+benchmark = "loca-bench"
+task_family = "CanvasArrangeExamS2LEnv"
+family_slug = "canvas-arrange-exam"
+edl_tokens = 131072
+edl_label = "128k"
+seed = 42
+upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
+config_sha256 = "57b9c92ffa571093929f93143e815362ac9988f4023f2ace72267f3e39b75d39"
+dataset_version = "1.0.0"
+runtime_contract_version = 1
+scaffold = "loca-official-react-v1"
+
+[agent]
+timeout_sec = 7200.0
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "shared"
+
+[environment]
+network_mode = "public"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968"
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+env = { LOCA_TASK_ID = "loca__canvas-arrange-exam__edl-128k__seed-0042", LOCA_TASK_SPEC_SHA256 = "57b9c92ffa571093929f93143e815362ac9988f4023f2ace72267f3e39b75d39", LOCA_DATASET_VERSION = "1.0.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968" }
+
+[environment.healthcheck]
+command = "python /opt/loca-harbor/preflight.py"
+timeout_sec = 30.0
+interval_sec = 2.0
+retries = 3

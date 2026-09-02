@@ -1,0 +1,43 @@
+schema_version = "1.4"
+source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703b74ea255357c3ec"
+
+[task]
+name = "osmosis-ai/loca-bench__loca__machine-operating__edl-256k__seed-0042"
+version = "1.0.0"
+description = "LOCA-bench MachineOperatingS2LEnv at 256K EDL, seed 42"
+keywords = ["loca-bench", "long-context", "tool-use", "react"]
+
+[metadata]
+benchmark = "loca-bench"
+task_family = "MachineOperatingS2LEnv"
+family_slug = "machine-operating"
+edl_tokens = 262144
+edl_label = "256k"
+seed = 42
+upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
+config_sha256 = "fe94b4f9f65476786e7c272e9ccfb92dc4fc98074ea3f4a8ca4d9aafbd2237c3"
+dataset_version = "1.0.0"
+runtime_contract_version = 1
+scaffold = "loca-official-react-v1"
+
+[agent]
+timeout_sec = 7200.0
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "shared"
+
+[environment]
+network_mode = "public"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968"
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+env = { LOCA_TASK_ID = "loca__machine-operating__edl-256k__seed-0042", LOCA_TASK_SPEC_SHA256 = "fe94b4f9f65476786e7c272e9ccfb92dc4fc98074ea3f4a8ca4d9aafbd2237c3", LOCA_DATASET_VERSION = "1.0.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968" }
+
+[environment.healthcheck]
+command = "python /opt/loca-harbor/preflight.py"
+timeout_sec = 30.0
+interval_sec = 2.0
+retries = 3

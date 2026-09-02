@@ -10,11 +10,11 @@ tree against the adapter.
 
 ## Status
 
-The skeleton is committed without `tasks/`, `registry.json` or `manifests/`:
-no runtime-image digest has been published yet, and a tree generated against a
-mutable tag must never land on `main` or a release tag. The first release
-commit adds all three at once.
-
+`v1.0.0` is generated against
+`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968`
+(multi-arch index: linux/amd64 + linux/arm64) from `Osmosis-AI/harbor`
+`adapters/loca-bench` at commit `3f0354c0f`. The manifest in `manifests/`
+records the same values.
 ## Layout
 
 ```

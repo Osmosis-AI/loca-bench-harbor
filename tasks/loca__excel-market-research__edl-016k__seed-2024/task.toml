@@ -1,0 +1,43 @@
+schema_version = "1.4"
+source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703b74ea255357c3ec"
+
+[task]
+name = "osmosis-ai/loca-bench__loca__excel-market-research__edl-016k__seed-2024"
+version = "1.0.0"
+description = "LOCA-bench ExcelMarketResearchS2LEnv at 16K EDL, seed 2024"
+keywords = ["loca-bench", "long-context", "tool-use", "react"]
+
+[metadata]
+benchmark = "loca-bench"
+task_family = "ExcelMarketResearchS2LEnv"
+family_slug = "excel-market-research"
+edl_tokens = 16384
+edl_label = "016k"
+seed = 2024
+upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
+config_sha256 = "7997f8dcce58f68392a30b7c108a13c32174ad29eadb6caeebb7a399ca9e9c9c"
+dataset_version = "1.0.0"
+runtime_contract_version = 1
+scaffold = "loca-official-react-v1"
+
+[agent]
+timeout_sec = 7200.0
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "shared"
+
+[environment]
+network_mode = "public"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968"
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+env = { LOCA_TASK_ID = "loca__excel-market-research__edl-016k__seed-2024", LOCA_TASK_SPEC_SHA256 = "7997f8dcce58f68392a30b7c108a13c32174ad29eadb6caeebb7a399ca9e9c9c", LOCA_DATASET_VERSION = "1.0.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968" }
+
+[environment.healthcheck]
+command = "python /opt/loca-harbor/preflight.py"
+timeout_sec = 30.0
+interval_sec = 2.0
+retries = 3

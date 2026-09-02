@@ -1,0 +1,4283 @@
+[
+  {
+    "name": "loca-bench",
+    "version": "1.0.0",
+    "description": "Full LOCA-bench matrix: 15 families x 7 EDL x 5 seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-016k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-016k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-016k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-016k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-016k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-032k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-032k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-032k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-032k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-032k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-096k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-096k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-096k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-096k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-096k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-016k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-016k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-016k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-016k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-016k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-032k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-032k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-032k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-032k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-032k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-096k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-096k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-096k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-096k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-096k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-016k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-016k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-016k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-016k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-016k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-032k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-032k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-032k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-032k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-032k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-096k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-096k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-096k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-096k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-096k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-016k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-016k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-016k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-016k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-016k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-032k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-032k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-032k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-032k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-032k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-096k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-096k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-096k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-096k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-096k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-016k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-016k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-016k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-016k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-016k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-032k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-032k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-032k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-032k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-032k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-096k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-096k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-096k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-096k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-096k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-016k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-016k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-016k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-016k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-016k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-032k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-032k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-032k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-032k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-032k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-096k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-096k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-096k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-096k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-096k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-016k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-016k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-016k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-016k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-016k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-032k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-032k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-032k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-032k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-032k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-096k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-096k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-096k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-096k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-096k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-016k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-016k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-016k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-016k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-016k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-032k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-032k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-032k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-032k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-032k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-096k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-096k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-096k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-096k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-096k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-016k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-016k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-016k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-016k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-016k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-032k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-032k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-032k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-032k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-032k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-096k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-096k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-096k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-096k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-096k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-016k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-016k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-016k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-016k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-016k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-032k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-032k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-032k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-032k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-032k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-096k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-096k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-096k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-096k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-096k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-016k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-016k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-016k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-016k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-016k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-032k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-032k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-032k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-032k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-032k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-096k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-096k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-096k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-096k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-096k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-016k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-016k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-016k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-016k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-016k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-032k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-032k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-032k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-032k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-032k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-096k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-096k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-096k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-096k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-096k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-016k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-016k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-016k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-016k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-016k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-032k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-032k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-032k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-032k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-032k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-096k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-096k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-096k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-096k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-096k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-016k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-016k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-016k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-016k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-016k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-032k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-032k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-032k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-032k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-032k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-096k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-096k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-096k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-096k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-096k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-016k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-016k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-016k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-016k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-016k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-016k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-016k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-016k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-016k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-016k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-032k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-032k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-032k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-032k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-032k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-032k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-032k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-032k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-032k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-032k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-096k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-096k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-096k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-096k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-096k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-096k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-096k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-096k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-096k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-096k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-2024"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-smoke",
+    "version": "1.0.0",
+    "description": "Eight-task deployment smoke across low, mid, and extreme EDL.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0042"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-core",
+    "version": "1.0.0",
+    "description": "8K, 64K, and 256K EDL across all families and seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-2024"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-8k",
+    "version": "1.0.0",
+    "description": "8K EDL slice: all families and seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-008k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-008k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-008k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-008k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-008k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-008k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-008k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-008k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-008k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-008k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-008k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-008k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-008k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-008k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-008k__seed-2024"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-64k",
+    "version": "1.0.0",
+    "description": "64K EDL slice: all families and seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-064k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-064k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-064k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-064k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-064k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-064k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-064k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-064k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-064k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-064k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-064k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-064k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-064k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-064k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-064k__seed-2024"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-128k",
+    "version": "1.0.0",
+    "description": "128K EDL slice: all families and seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-128k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-128k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-128k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-128k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-128k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-128k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-128k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-128k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-128k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-128k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-128k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-128k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-128k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-128k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-128k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-128k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-128k__seed-2024"
+      }
+    ]
+  },
+  {
+    "name": "loca-bench-256k",
+    "version": "1.0.0",
+    "description": "256K EDL slice: all families and seeds.",
+    "tasks": [
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0042",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0123",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0456",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-0789",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__ab-testing__edl-256k__seed-2024",
+        "path": "tasks/loca__ab-testing__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0042",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0123",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0456",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-0789",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__academic-warning__edl-256k__seed-2024",
+        "path": "tasks/loca__academic-warning__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0042",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0123",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0456",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-0789",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__apply-ph-d-email__edl-256k__seed-2024",
+        "path": "tasks/loca__apply-ph-d-email__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-arrange-exam__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-arrange-exam__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0042",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0123",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0456",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-0789",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__canvas-list-test__edl-256k__seed-2024",
+        "path": "tasks/loca__canvas-list-test__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0042",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0123",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0456",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-0789",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__course-assistant__edl-256k__seed-2024",
+        "path": "tasks/loca__course-assistant__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0042",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0123",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0456",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-0789",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__excel-market-research__edl-256k__seed-2024",
+        "path": "tasks/loca__excel-market-research__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0042",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0123",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0456",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-0789",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__filter-low-selling-products__edl-256k__seed-2024",
+        "path": "tasks/loca__filter-low-selling-products__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0042",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0123",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0456",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-0789",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__machine-operating__edl-256k__seed-2024",
+        "path": "tasks/loca__machine-operating__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0042",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0123",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0456",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-0789",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__nhl-b2b-analysis__edl-256k__seed-2024",
+        "path": "tasks/loca__nhl-b2b-analysis__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0042",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0123",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0456",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-0789",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__payable-invoice-checker__edl-256k__seed-2024",
+        "path": "tasks/loca__payable-invoice-checker__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0042",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0123",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0456",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-0789",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__set-conf-cr-ddl__edl-256k__seed-2024",
+        "path": "tasks/loca__set-conf-cr-ddl__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0042",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0123",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0456",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-0789",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__update-material-inventory__edl-256k__seed-2024",
+        "path": "tasks/loca__update-material-inventory__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-new-welcome__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-new-welcome__edl-256k__seed-2024"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0042",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0042"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0123",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0123"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0456",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0456"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-0789",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-0789"
+      },
+      {
+        "name": "loca__woocommerce-stock-alert__edl-256k__seed-2024",
+        "path": "tasks/loca__woocommerce-stock-alert__edl-256k__seed-2024"
+      }
+    ]
+  }
+]

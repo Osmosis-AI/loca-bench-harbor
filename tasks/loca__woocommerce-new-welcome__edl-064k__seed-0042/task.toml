@@ -1,0 +1,43 @@
+schema_version = "1.4"
+source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703b74ea255357c3ec"
+
+[task]
+name = "osmosis-ai/loca-bench__loca__woocommerce-new-welcome__edl-064k__seed-0042"
+version = "1.0.0"
+description = "LOCA-bench WoocommerceNewWelcomeS2LEnv at 64K EDL, seed 42"
+keywords = ["loca-bench", "long-context", "tool-use", "react"]
+
+[metadata]
+benchmark = "loca-bench"
+task_family = "WoocommerceNewWelcomeS2LEnv"
+family_slug = "woocommerce-new-welcome"
+edl_tokens = 65536
+edl_label = "064k"
+seed = 42
+upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
+config_sha256 = "c08602f76edf32231db367348603a9ae296ccec2d7421701850e771d4cc8ca1d"
+dataset_version = "1.0.0"
+runtime_contract_version = 1
+scaffold = "loca-official-react-v1"
+
+[agent]
+timeout_sec = 7200.0
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "shared"
+
+[environment]
+network_mode = "public"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968"
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+env = { LOCA_TASK_ID = "loca__woocommerce-new-welcome__edl-064k__seed-0042", LOCA_TASK_SPEC_SHA256 = "c08602f76edf32231db367348603a9ae296ccec2d7421701850e771d4cc8ca1d", LOCA_DATASET_VERSION = "1.0.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:3c82c9d603af4cb1a0c23eced03ee334c1f559a1555c2108b045add86ab86968" }
+
+[environment.healthcheck]
+command = "python /opt/loca-harbor/preflight.py"
+timeout_sec = 30.0
+interval_sec = 2.0
+retries = 3
