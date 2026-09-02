@@ -1,0 +1,34 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Osmosis-AI/harbor is public, so no token is needed here. If it is ever
+      # made private, add: token: ${{ secrets.HARBOR_RO_TOKEN }}
+      - uses: actions/checkout@v4
+        with:
+          repository: Osmosis-AI/harbor
+          ref: adapters
+          path: harbor
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Validate dataset
+        run: |
+          if [ ! -d manifests ]; then
+            echo "No manifests/ directory yet: skeleton commit, nothing to validate."
+            exit 0
+          fi
+          image="$(python3 -c 'import json,glob;print(json.load(open(glob.glob("manifests/loca-bench-*.json")[0]))["runtime"]["image"])')"
+          echo "Validating against runtime image: $image"
+          uv run --project harbor/adapters/loca-bench loca-bench validate \
+            --dataset-dir . --runtime-image "$image"

@@ -1,0 +1,20 @@
+# Harbor run output
+jobs/
+trials/
+
+# Python / editor noise
+.venv/
+__pycache__/
+.DS_Store
+
+# LOCA runtime products: never commit these into a task tree.
+# Mirrors generator.FORBIDDEN_TASK_ENTRIES in Osmosis-AI/harbor
+# adapters/loca-bench/src/loca_bench/generator.py.
+local_db/
+agent_workspace/
+groundtruth_workspace/
+outputs/
+trajectory.json
+eval.json
+token_stats.json
+all_trajectories.json
