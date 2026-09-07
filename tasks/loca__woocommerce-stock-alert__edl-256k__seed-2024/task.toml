@@ -3,7 +3,7 @@ source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703
 
 [task]
 name = "osmosis-ai/loca-bench__loca__woocommerce-stock-alert__edl-256k__seed-2024"
-version = "1.1.0"
+version = "1.2.1"
 description = "LOCA-bench WoocommerceStockAlertS2LEnv at 256K EDL, seed 2024"
 keywords = ["loca-bench", "long-context", "tool-use", "react"]
 
@@ -16,12 +16,15 @@ edl_label = "256k"
 seed = 2024
 upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
 config_sha256 = "52e19e3bf6815067da908654e1350487d9d4cb484f0abd816a821fe94be6f6cf"
-dataset_version = "1.1.0"
+dataset_version = "1.2.1"
 runtime_contract_version = 1
 scaffold = "loca-official-react-v1"
 
 [agent]
-timeout_sec = 7200.0
+# Per-EDL wall clock (contract.AGENT_TIMEOUT_SEC_BY_EDL). run_one.py stops the
+# official runner LOCA_EPISODE_BUDGET_SEC into the episode, five minutes before
+# this, so the trajectory and a classified result survive instead of a hard kill.
+timeout_sec = 21600
 
 [verifier]
 timeout_sec = 60.0
@@ -29,12 +32,12 @@ environment_mode = "shared"
 
 [environment]
 network_mode = "public"
-docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c"
 workdir = "/workspace"
 cpus = 4
 memory_mb = 8192
 storage_mb = 20480
-env = { LOCA_TASK_ID = "loca__woocommerce-stock-alert__edl-256k__seed-2024", LOCA_TASK_SPEC_SHA256 = "52e19e3bf6815067da908654e1350487d9d4cb484f0abd816a821fe94be6f6cf", LOCA_DATASET_VERSION = "1.1.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b" }
+env = { LOCA_TASK_ID = "loca__woocommerce-stock-alert__edl-256k__seed-2024", LOCA_TASK_SPEC_SHA256 = "52e19e3bf6815067da908654e1350487d9d4cb484f0abd816a821fe94be6f6cf", LOCA_DATASET_VERSION = "1.2.1", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c", LOCA_EPISODE_BUDGET_SEC = "21300" }
 
 [environment.healthcheck]
 command = "python /opt/loca-harbor/preflight.py"

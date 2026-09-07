@@ -3,7 +3,7 @@ source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703
 
 [task]
 name = "osmosis-ai/loca-bench__loca__nhl-b2b-analysis__edl-008k__seed-0123"
-version = "1.1.0"
+version = "1.2.1"
 description = "LOCA-bench NhlB2bAnalysisS2LEnv at 8K EDL, seed 123"
 keywords = ["loca-bench", "long-context", "tool-use", "react"]
 
@@ -16,12 +16,15 @@ edl_label = "008k"
 seed = 123
 upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
 config_sha256 = "388a1c4067950d7610c06393f440a826f72383441c6899f27ebfb9163bb377dc"
-dataset_version = "1.1.0"
+dataset_version = "1.2.1"
 runtime_contract_version = 1
 scaffold = "loca-official-react-v1"
 
 [agent]
-timeout_sec = 7200.0
+# Per-EDL wall clock (contract.AGENT_TIMEOUT_SEC_BY_EDL). run_one.py stops the
+# official runner LOCA_EPISODE_BUDGET_SEC into the episode, five minutes before
+# this, so the trajectory and a classified result survive instead of a hard kill.
+timeout_sec = 7200
 
 [verifier]
 timeout_sec = 60.0
@@ -29,12 +32,12 @@ environment_mode = "shared"
 
 [environment]
 network_mode = "public"
-docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c"
 workdir = "/workspace"
 cpus = 4
 memory_mb = 8192
 storage_mb = 20480
-env = { LOCA_TASK_ID = "loca__nhl-b2b-analysis__edl-008k__seed-0123", LOCA_TASK_SPEC_SHA256 = "388a1c4067950d7610c06393f440a826f72383441c6899f27ebfb9163bb377dc", LOCA_DATASET_VERSION = "1.1.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b" }
+env = { LOCA_TASK_ID = "loca__nhl-b2b-analysis__edl-008k__seed-0123", LOCA_TASK_SPEC_SHA256 = "388a1c4067950d7610c06393f440a826f72383441c6899f27ebfb9163bb377dc", LOCA_DATASET_VERSION = "1.2.1", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c", LOCA_EPISODE_BUDGET_SEC = "6900" }
 
 [environment.healthcheck]
 command = "python /opt/loca-harbor/preflight.py"
