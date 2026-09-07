@@ -10,13 +10,20 @@ tree against the adapter.
 
 ## Status
 
-`v1.1.0` is generated against
-`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:340aa05e0a085c2403d51146e3d094099f73e879f0f9b4d584cc105a0a3c2c2b`
-(multi-arch index: linux/amd64 + linux/arm64) from `Osmosis-AI/harbor`
-`adapters/loca-bench` at commit `8a71f5fd8` (harness `1.1.0+loca.8b6fac49`,
-which adds the OpenAI-native payload mode for direct OpenAI routes). The
-manifest in `manifests/` records the same values. `v1.0.0` remains valid for
-runs against gateways that accept the upstream payload.
+`v1.2.0` is generated against
+`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:9561a3d202ff4bfce98b43661f3281a798346233e50507d71574e1d6964eb604`
+(multi-arch index: linux/amd64 + linux/arm64, tag
+`loca-8b6fac49-adapter-a201fe7c656b-contract-1`, built by the
+`loca-runtime-a201fe7c656b` release run of `Osmosis-AI/harbor`) from
+`adapters/loca-bench` at commit `a201fe7c6` (harness `1.2.0+loca.8b6fac49`).
+This harness grades model-caused API terminations (a context overflow, or an
+HTTP 400 after at least one completion) as reward 0 instead of ungraded, sets
+`[agent].timeout_sec` per EDL with an inner episode budget the runner enforces
+itself, and runs the uv-launched MCP servers from the image's pinned packages.
+The manifest in `manifests/` records the same values. `v1.1.0` and `v1.0.0`
+remain valid for the earlier harness semantics; scores are not comparable
+across the graded-zero change.
+
 ## Layout
 
 ```
@@ -45,8 +52,12 @@ the resolved commit at resolve time. The platform sets
 
 The order is one-way. Never generate against a mutable tag.
 
-1. Build the runtime image from `Osmosis-AI/harbor` `adapters/loca-bench/runtime/Dockerfile` and push it.
-2. Resolve its immutable digest: `docker buildx imagetools inspect <ref> --format '{{.Manifest.Digest}}'`.
+1. Release the runtime image from `Osmosis-AI/harbor`: tag the adapter commit
+   `loca-runtime-<sha12>` and push the tag. The workflow
+   `.github/workflows/loca-bench-runtime-image.yml` builds linux/amd64 and
+   linux/arm64 natively, pushes the multi-arch tag and prints the index digest
+   in its summary.
+2. Take that digest, or resolve it: `docker buildx imagetools inspect <ref> --format '{{.Manifest.Digest}}'`.
 3. `scripts/release.sh --runtime-image <ref>@sha256:<digest> --dataset-version <x.y.z> --harbor-src <harbor checkout> --loca-src <pinned LOCA-bench checkout>`
    (this runs `loca-bench generate` then `loca-bench validate`).
 4. `git add -A && git commit -m "Release loca-bench <x.y.z>"`
