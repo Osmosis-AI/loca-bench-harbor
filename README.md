@@ -10,19 +10,20 @@ tree against the adapter.
 
 ## Status
 
-`v1.2.0` is generated against
-`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:9561a3d202ff4bfce98b43661f3281a798346233e50507d71574e1d6964eb604`
+`v1.2.1` is generated against
+`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c`
 (multi-arch index: linux/amd64 + linux/arm64, tag
-`loca-8b6fac49-adapter-a201fe7c656b-contract-1`, built by the
-`loca-runtime-a201fe7c656b` release run of `Osmosis-AI/harbor`) from
-`adapters/loca-bench` at commit `a201fe7c6` (harness `1.2.0+loca.8b6fac49`).
+`loca-8b6fac49-adapter-9e309cad0d97-contract-1`, built by the
+`loca-runtime-9e309cad0d97` release run of `Osmosis-AI/harbor`) from
+`adapters/loca-bench` at commit `9e309cad0` (harness `1.2.0+loca.8b6fac49`).
 This harness grades model-caused API terminations (a context overflow, or an
 HTTP 400 after at least one completion) as reward 0 instead of ungraded, sets
 `[agent].timeout_sec` per EDL with an inner episode budget the runner enforces
 itself, and runs the uv-launched MCP servers from the image's pinned packages.
-The manifest in `manifests/` records the same values. `v1.1.0` and `v1.0.0`
-remain valid for the earlier harness semantics; scores are not comparable
-across the graded-zero change.
+`v1.2.0` is the same harness built from the adapter commit before the
+process-group cleanup fix; prefer `v1.2.1`. The manifest in `manifests/`
+records the same values. `v1.1.0` and `v1.0.0` remain valid for the earlier
+harness semantics; scores are not comparable across the graded-zero change.
 
 ## Layout
 
