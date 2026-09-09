@@ -10,20 +10,11 @@ tree against the adapter.
 
 ## Status
 
-`v1.2.1` is generated against
-`ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c`
-(multi-arch index: linux/amd64 + linux/arm64, tag
-`loca-8b6fac49-adapter-9e309cad0d97-contract-1`, built by the
-`loca-runtime-9e309cad0d97` release run of `Osmosis-AI/harbor`) from
-`adapters/loca-bench` at commit `9e309cad0` (harness `1.2.0+loca.8b6fac49`).
-This harness grades model-caused API terminations (a context overflow, or an
-HTTP 400 after at least one completion) as reward 0 instead of ungraded, sets
-`[agent].timeout_sec` per EDL with an inner episode budget the runner enforces
-itself, and runs the uv-launched MCP servers from the image's pinned packages.
-`v1.2.0` is the same harness built from the adapter commit before the
-process-group cleanup fix; prefer `v1.2.1`. The manifest in `manifests/`
-records the same values. `v1.1.0` and `v1.0.0` remain valid for the earlier
-harness semantics; scores are not comparable across the graded-zero change.
+`v1.3.0` pins `ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df` (linux/amd64 + linux/arm64), built from Harbor commit `ae9f2b9e9af74d3a351cd8c00770b14580209c69` by the [`loca-runtime-ae9f2b9e9af7` release workflow](https://github.com/Osmosis-AI/harbor/actions/runs/34307471645). The manifest records harness `1.3.0+loca.8b6fac49` and the same 525 upstream task configurations as `v1.2.1`.
+
+The runtime adds native OpenAI Responses with complete reasoning and function-call state replay, while retaining Chat Completions. API format is selected independently of reasoning effort. Use the matching Harbor controller from [Harbor PR #21](https://github.com/Osmosis-AI/harbor/pull/21) or a later commit containing it. Updating Harbor alone cannot add Responses support to the older task images.
+
+Task content, scoring rules, per-EDL timeouts, and the existing ReAct profile remain unchanged from `v1.2.1`. Earlier tags remain immutable. `v1.1.0` and `v1.0.0` use the earlier grading semantics and are not comparable across the model-caused API termination change introduced in `v1.2.0`.
 
 ## Layout
 
