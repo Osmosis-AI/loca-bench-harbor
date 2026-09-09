@@ -3,7 +3,7 @@ source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703
 
 [task]
 name = "osmosis-ai/loca-bench__loca__apply-ph-d-email__edl-256k__seed-0456"
-version = "1.2.1"
+version = "1.3.0"
 description = "LOCA-bench ApplyPhDEmailS2LEnv at 256K EDL, seed 456"
 keywords = ["loca-bench", "long-context", "tool-use", "react"]
 
@@ -16,7 +16,7 @@ edl_label = "256k"
 seed = 456
 upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
 config_sha256 = "fb5590bc443688420fae3e05e6a82233ffc895786f319f817b25ad99d6420cc9"
-dataset_version = "1.2.1"
+dataset_version = "1.3.0"
 runtime_contract_version = 1
 scaffold = "loca-official-react-v1"
 
@@ -32,12 +32,12 @@ environment_mode = "shared"
 
 [environment]
 network_mode = "public"
-docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df"
 workdir = "/workspace"
 cpus = 4
 memory_mb = 8192
 storage_mb = 20480
-env = { LOCA_TASK_ID = "loca__apply-ph-d-email__edl-256k__seed-0456", LOCA_TASK_SPEC_SHA256 = "fb5590bc443688420fae3e05e6a82233ffc895786f319f817b25ad99d6420cc9", LOCA_DATASET_VERSION = "1.2.1", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:169db7226a27ee3e1091125d46ffc22cf9a64554216d14c9053ef38ef9cd291c", LOCA_EPISODE_BUDGET_SEC = "21300" }
+env = { LOCA_TASK_ID = "loca__apply-ph-d-email__edl-256k__seed-0456", LOCA_TASK_SPEC_SHA256 = "fb5590bc443688420fae3e05e6a82233ffc895786f319f817b25ad99d6420cc9", LOCA_DATASET_VERSION = "1.3.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df", LOCA_EPISODE_BUDGET_SEC = "21300" }
 
 [environment.healthcheck]
 command = "python /opt/loca-harbor/preflight.py"
