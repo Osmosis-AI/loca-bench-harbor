@@ -11,27 +11,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      # Osmosis-AI/harbor is public, so no token is needed here. If it is ever
-      # made private, add: token: ${{ secrets.HARBOR_RO_TOKEN }}
-      # The adapter normally lives on the `adapters` branch. While it is still
-      # on a feature branch, the repository variable HARBOR_REF overrides the
-      # ref; delete the variable once the adapter PR has merged.
+      - name: Read the immutable release source
+        id: release
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, re
+          manifests = list(pathlib.Path('manifests').glob('loca-bench-*.json'))
+          if len(manifests) != 1:
+              raise SystemExit('Expected exactly one release manifest')
+          manifest = json.loads(manifests[0].read_text())
+          commit = manifest['adapter']['commit']
+          if not isinstance(commit, str) or not re.fullmatch('[0-9a-f]{40}', commit):
+              raise SystemExit('Manifest must pin the full Harbor source commit')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'harbor_commit={commit}\n')
+          PY
       - uses: actions/checkout@v4
         with:
           repository: Osmosis-AI/harbor
-          ref: ${{ vars.HARBOR_REF || 'adapters' }}
+          ref: ${{ steps.release.outputs.harbor_commit }}
           path: harbor
 
       - uses: astral-sh/setup-uv@v5
 
+      - name: Check release verification regressions
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
       - name: Validate dataset
         run: |
-          if [ ! -d manifests ]; then
-            echo "No manifests/ directory yet: skeleton commit, nothing to validate."
-            exit 0
-          fi
           image="$(python3 -c 'import json,glob;print(json.load(open(glob.glob("manifests/loca-bench-*.json")[0]))["runtime"]["image"])')"
           echo "Validating against runtime image: $image"
           uv run --project harbor/adapters/loca-bench loca-bench validate \
+            --dataset-dir . --runtime-image "$image"
+          python3 scripts/verify_runtime.py --harbor-src harbor \
             --dataset-dir . --runtime-image "$image"

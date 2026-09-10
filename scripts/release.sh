@@ -26,15 +26,20 @@ esac
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 adapter="$harbor_src/adapters/loca-bench"
 
+python3 "$root/scripts/verify_runtime.py" --harbor-src "$harbor_src" \
+  --loca-src "$loca_src" --runtime-image "$image" --require-hardened
+
 uv run --project "$adapter" loca-bench generate --source-dir "$loca_src" \
   --runtime-image "$image" --dataset-version "$version" --output-dir "$root"
 uv run --project "$adapter" loca-bench validate --dataset-dir "$root" \
   --runtime-image "$image"
 
 cat <<NEXT
-Generated and validated. Next, from $root:
+Generated and validated in $root.
 
-  git add -A && git commit -m "Release loca-bench $version"
+Review and commit the generated changes through the repository's normal review
+flow. After they are merged, check out the intended release commit, then run:
+
   git tag -a "v$version" -m "loca-bench $version"
-  git push origin main && git push origin "v$version"
+  git push origin "v$version"
 NEXT
