@@ -10,7 +10,12 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import patch
 
-from verify_runtime import check_evidence, main, require_merged_adapter
+from verify_runtime import (
+    check_evidence,
+    main,
+    require_merged_adapter,
+    require_upstream_source,
+)
 
 
 class RuntimeReleaseGateTests(unittest.TestCase):
@@ -177,6 +182,44 @@ class AdapterAncestryTests(unittest.TestCase):
         )
         with self.assertRaises(subprocess.CalledProcessError):
             require_merged_adapter(self.checkout, self.base)
+
+    def test_generation_rejects_dirty_upstream_before_probing_the_image(self):
+        source = self.checkout / "generator.py"
+        source.write_text("original")
+        self.git(self.checkout, "add", "generator.py")
+        self.commit(self.checkout)
+        commit = self.git(self.checkout, "rev-parse", "HEAD")
+        require_upstream_source(self.checkout, commit)
+        with self.assertRaisesRegex(ValueError, "generation upstream checkout"):
+            require_upstream_source(self.checkout, self.base)
+
+        argv = [
+            "verify_runtime.py",
+            "--harbor-src",
+            str(self.checkout),
+            "--loca-src",
+            str(self.checkout),
+            "--runtime-image",
+            "example.invalid/runtime@sha256:" + "b" * 64,
+        ]
+        for state in ("modified", "staged", "untracked"):
+            with self.subTest(state=state):
+                self.git(
+                    self.checkout, "restore", "--staged", "--worktree", "generator.py"
+                )
+                target = self.checkout / "extra.py" if state == "untracked" else source
+                target.write_text("changed")
+                if state == "staged":
+                    self.git(self.checkout, "add", "generator.py")
+                with (
+                    patch("sys.argv", argv),
+                    patch(
+                        "verify_runtime.source_contract",
+                        return_value={"upstream_commit": commit},
+                    ),
+                    self.assertRaisesRegex(ValueError, "clean LOCA upstream checkout"),
+                ):
+                    main()
 
     def test_only_hardened_cli_checks_release_ancestry(self):
         image = "example.invalid/runtime@sha256:" + "b" * 64

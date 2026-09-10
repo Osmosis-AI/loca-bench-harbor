@@ -123,6 +123,14 @@ def require_merged_adapter(harbor_src: Path, commit: str) -> None:
         )
 
 
+def require_upstream_source(loca_src: Path, commit: str) -> None:
+    """Require generation to use a clean checkout at the pinned upstream commit."""
+    git = ("git", "-C", str(loca_src))
+    require_equal("generation upstream checkout", run(*git, "rev-parse", "HEAD"), commit)
+    if run(*git, "status", "--porcelain", "--untracked-files=all"):
+        raise ValueError("Release provenance requires a clean LOCA upstream checkout")
+
+
 def source_contract(harbor_src: Path, image: str) -> dict:
     adapter = harbor_src / "adapters" / "loca-bench"
     if run(
@@ -206,11 +214,7 @@ def main() -> None:
     if args.require_hardened:
         require_merged_adapter(args.harbor_src.resolve(), expected["adapter_commit"])
     if args.loca_src is not None:
-        require_equal(
-            "generation upstream checkout",
-            run("git", "-C", str(args.loca_src), "rev-parse", "HEAD"),
-            expected["upstream_commit"],
-        )
+        require_upstream_source(args.loca_src.resolve(), expected["upstream_commit"])
     manifest = None
     if args.dataset_dir is not None:
         manifests = list((args.dataset_dir / "manifests").glob("loca-bench-*.json"))
