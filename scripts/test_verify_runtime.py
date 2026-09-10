@@ -1,7 +1,10 @@
 """Offline regressions for the release provenance gate."""
 
 import copy
+import hashlib
 import io
+import json
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -12,9 +15,12 @@ from unittest.mock import patch
 
 from verify_runtime import (
     check_evidence,
+    expected_upstream_tree,
     main,
     require_merged_adapter,
     require_upstream_source,
+    require_upstream_tree,
+    upstream_tree,
 )
 
 
@@ -31,11 +37,12 @@ class RuntimeReleaseGateTests(unittest.TestCase):
             "upstream_commit": "12345678" + "c" * 32,
             "patch_manifest_sha256": "d" * 64,
             "patchset_sha256": "e" * 64,
+            "upstream_tree": {"source.py": ["file", 0, "0" * 64]},
         }
         contract = {
             key: value
             for key, value in self.expected.items()
-            if key not in {"adapter_commit", "runtime_image"}
+            if key not in {"adapter_commit", "runtime_image", "upstream_tree"}
         }
         contract["task_index_sha256"] = "f" * 64
         self.evidence: dict[str, Any] = {
@@ -44,6 +51,7 @@ class RuntimeReleaseGateTests(unittest.TestCase):
             "upstream_commit": self.expected["upstream_commit"],
             "task_index_sha256": "f" * 64,
             "patch_manifest_sha256": self.expected["patch_manifest_sha256"],
+            "upstream_tree": copy.deepcopy(self.expected["upstream_tree"]),
         }
         self.manifest = {
             "adapter": {
@@ -70,6 +78,7 @@ class RuntimeReleaseGateTests(unittest.TestCase):
             "upstream_commit",
             "task_index_sha256",
             "patch_manifest_sha256",
+            "upstream_tree",
         ):
             with self.subTest(field=field):
                 evidence = copy.deepcopy(self.evidence)
@@ -107,6 +116,8 @@ class RuntimeReleaseGateTests(unittest.TestCase):
             agent_version="1.3.0+loca.12345678",
         )
         self.expected.pop("isolation_policy")
+        self.expected.pop("upstream_tree")
+        self.evidence.pop("upstream_tree")
         self.evidence["contract"] = {**self.expected, "task_index_sha256": "f" * 64}
         check_evidence(self.expected, self.evidence)
         with self.assertRaisesRegex(ValueError, "release contract"):
@@ -124,6 +135,9 @@ class AdapterAncestryTests(unittest.TestCase):
         self.commit(self.origin)
         self.git(self.root, "clone", str(self.origin), str(self.checkout))
         self.base = self.git(self.checkout, "rev-parse", "HEAD")
+        official = patch("verify_runtime.HARBOR_REPOSITORY", str(self.origin))
+        official.start()
+        self.addCleanup(official.stop)
 
     @staticmethod
     def git(repo, *args):
@@ -173,14 +187,26 @@ class AdapterAncestryTests(unittest.TestCase):
             require_merged_adapter(self.checkout, head)
         self.assertEqual(self.git(self.checkout, "rev-parse", "origin/adapters"), head)
 
-    def test_missing_remote_branch_and_unavailable_origin_fail_closed(self):
+    def test_fork_origin_cannot_authorize_an_unmerged_commit(self):
+        fork = self.root / "fork"
+        self.git(self.root, "clone", str(self.origin), str(fork))
+        self.commit(fork)
+        self.git(self.checkout, "remote", "set-url", "origin", str(fork))
+        self.git(self.checkout, "pull", "--ff-only")
+        head = self.git(self.checkout, "rev-parse", "HEAD")
+        self.assertEqual(self.git(self.checkout, "rev-parse", "origin/adapters"), head)
+        self.assertNotEqual(self.git(self.origin, "rev-parse", "HEAD"), head)
+        with self.assertRaisesRegex(ValueError, "official Osmosis-AI/harbor"):
+            require_merged_adapter(self.checkout, head)
+
+    def test_missing_official_branch_and_unavailable_repository_fail_closed(self):
         self.git(self.origin, "branch", "-m", "gone")
         with self.assertRaises(subprocess.CalledProcessError):
             require_merged_adapter(self.checkout, self.base)
-        self.git(
-            self.checkout, "remote", "set-url", "origin", str(self.root / "missing")
-        )
-        with self.assertRaises(subprocess.CalledProcessError):
+        with (
+            patch("verify_runtime.HARBOR_REPOSITORY", str(self.root / "missing")),
+            self.assertRaises(subprocess.CalledProcessError),
+        ):
             require_merged_adapter(self.checkout, self.base)
 
     def test_generation_rejects_dirty_upstream_before_probing_the_image(self):
@@ -244,6 +270,7 @@ class AdapterAncestryTests(unittest.TestCase):
                         },
                     ),
                     patch("verify_runtime.require_merged_adapter") as ancestry,
+                    patch("verify_runtime.expected_upstream_tree", return_value={}),
                     patch(
                         "verify_runtime.run",
                         side_effect=[
@@ -260,6 +287,127 @@ class AdapterAncestryTests(unittest.TestCase):
                     ancestry.assert_called_once_with(self.checkout.resolve(), self.base)
                 else:
                     ancestry.assert_not_called()
+
+
+class UpstreamTreeTests(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.root = Path(temporary.name)
+        self.source = self.root / "source"
+        self.source.mkdir()
+        self.git("init", "--quiet", "-b", "main")
+        self.before = "first = 1\n" + "\n" * 8 + "second = 1\n"
+        self.after = self.before.replace("= 1", "= 2")
+        (self.source / "required.py").write_text(self.before)
+        (self.source / "other.py").write_text("safe\n")
+        (self.source / ".gitignore").write_text("ignored.py\n__pycache__/\n")
+        (self.source / "entry.py").symlink_to("required.py")
+        self.git("add", ".")
+        self.git(
+            "-c",
+            "user.name=Tree Test",
+            "-c",
+            "user.email=tree@example.invalid",
+            "commit",
+            "--quiet",
+            "--no-gpg-sign",
+            "-m",
+            "fixture",
+        )
+        self.expected = {
+            "upstream_commit": self.git("rev-parse", "HEAD").strip(),
+            "upstream_repository": str(self.source),
+        }
+        (self.source / "required.py").write_text(self.after)
+        self.adapter = self.root / "harbor/adapters/loca-bench"
+        self.adapter.mkdir(parents=True)
+        self.patch = self.adapter / "fix.patch"
+        self.patch.write_text(self.git("diff", "--", "required.py"))
+        manifest = json.dumps(
+            {
+                "patches": [
+                    {
+                        "file": self.patch.name,
+                        "sha256": hashlib.sha256(self.patch.read_bytes()).hexdigest(),
+                    }
+                ]
+            }
+        )
+        (self.adapter / "patch-manifest.json").write_text(manifest)
+        self.expected["patch_manifest_sha256"] = hashlib.sha256(
+            manifest.encode()
+        ).hexdigest()
+        self.patched_tree = upstream_tree(self.source)
+
+    def git(self, *args):
+        return subprocess.check_output(
+            ["git", "-C", str(self.source), *args], text=True
+        )
+
+    def test_expected_tree_uses_pinned_objects_and_applies_audited_patches(self):
+        (self.source / "required.py").write_text("dirty source must not be copied\n")
+        original = upstream_tree(self.source)
+        for source in (self.source, None):
+            with self.subTest(reuse_source=source is not None):
+                actual = expected_upstream_tree(
+                    self.root / "harbor", self.expected, source
+                )
+                self.assertEqual(actual, self.patched_tree)
+                self.assertEqual(upstream_tree(self.source), original)
+
+    def test_modified_patch_is_rejected(self):
+        self.patch.write_text("unreviewed patch")
+        with self.assertRaisesRegex(ValueError, "fix.patch"):
+            expected_upstream_tree(self.root / "harbor", self.expected, self.source)
+
+    def test_actual_tree_rejects_missing_and_extra_source_or_changed_metadata(self):
+        cases = (
+            "missing_patch",
+            "missing_hunk",
+            "other_file",
+            "ignored_source",
+            "untracked_source",
+            "bytecode",
+            "symlink",
+            "executable",
+        )
+        for case in cases:
+            with self.subTest(case=case):
+                actual = self.root / case
+                shutil.copytree(
+                    self.source,
+                    actual,
+                    symlinks=True,
+                    ignore=shutil.ignore_patterns(".git"),
+                )
+                if case == "missing_patch":
+                    (actual / "required.py").write_text(self.before)
+                elif case == "missing_hunk":
+                    (actual / "required.py").write_text(
+                        self.after.replace("second = 2", "second = 1")
+                    )
+                elif case == "other_file":
+                    (actual / "other.py").write_text("changed\n")
+                elif case in {"ignored_source", "untracked_source"}:
+                    (
+                        actual
+                        / ("ignored.py" if case == "ignored_source" else "extra.py")
+                    ).write_text("unexpected\n")
+                elif case == "bytecode":
+                    (actual / "__pycache__").mkdir()
+                    (actual / "__pycache__/other.cpython-312.pyc").write_bytes(
+                        b"unexpected bytecode"
+                    )
+                elif case == "symlink":
+                    (actual / "entry.py").unlink()
+                    (actual / "entry.py").symlink_to("other.py")
+                else:
+                    (actual / "other.py").chmod(0o755)
+                with self.assertRaisesRegex(ValueError, "Image upstream tree differs"):
+                    require_upstream_tree(upstream_tree(actual), self.patched_tree)
+        (self.source / "__pycache__").mkdir()
+        require_upstream_tree(upstream_tree(self.source), self.patched_tree)
 
 
 if __name__ == "__main__":

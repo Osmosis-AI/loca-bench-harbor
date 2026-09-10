@@ -6,10 +6,17 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
+import inspect
 import json
+import os
 import re
+import stat
 import subprocess
+import tarfile
+import tempfile
 from pathlib import Path
+
+HARBOR_REPOSITORY = "https://github.com/Osmosis-AI/harbor.git"
 
 
 def run(*args: str) -> str:
@@ -19,6 +26,51 @@ def run(*args: str) -> str:
 def require_equal(label: str, actual: object, expected: object) -> None:
     if actual != expected:
         raise ValueError(f"{label}: expected {expected!r}, got {actual!r}")
+
+
+def upstream_tree(root: Path) -> dict:
+    """Fingerprint actual filesystem entries, including ignored and untracked code."""
+
+    def fail(error):
+        raise error
+
+    result = {}
+    for directory, directories, files in os.walk(root, followlinks=False, onerror=fail):
+        if Path(directory) == root:
+            directories[:] = [name for name in directories if name != ".git"]
+            files = [name for name in files if name != ".git"]
+        for name in directories + files:
+            path = Path(directory) / name
+            mode = path.lstat().st_mode
+            executable = mode & 0o111
+            if stat.S_ISLNK(mode):
+                value = ["symlink", os.readlink(path)]
+            elif stat.S_ISDIR(mode):
+                continue
+            elif stat.S_ISREG(mode):
+                value = [
+                    "file",
+                    executable,
+                    hashlib.sha256(path.read_bytes()).hexdigest(),
+                ]
+            else:
+                raise ValueError(f"Unsupported upstream entry: {path}")
+            result[path.relative_to(root).as_posix()] = value
+    return result
+
+
+def require_upstream_tree(actual: object, expected: dict) -> None:
+    if not isinstance(actual, dict):
+        raise ValueError("Image upstream tree evidence is missing")
+    changed = sorted(
+        path
+        for path in actual.keys() | expected.keys()
+        if actual.get(path) != expected.get(path)
+    )
+    if changed:
+        raise ValueError(
+            f"Image upstream tree differs at {len(changed)} paths: {', '.join(changed[:10])}"
+        )
 
 
 def check_evidence(
@@ -50,7 +102,7 @@ def check_evidence(
         )
     contract = evidence["contract"]
     for key, value in expected.items():
-        if key not in {"adapter_commit", "runtime_image"}:
+        if key not in {"adapter_commit", "runtime_image", "upstream_tree"}:
             require_equal(f"runtime {key}", contract.get(key), value)
     require_equal(
         "image source commit", evidence["adapter_commit"], expected["adapter_commit"]
@@ -68,6 +120,8 @@ def check_evidence(
         evidence["patch_manifest_sha256"],
         expected["patch_manifest_sha256"],
     )
+    if expected["runtime_contract_version"] >= 2:
+        require_upstream_tree(evidence.get("upstream_tree"), expected["upstream_tree"])
     if manifest is not None:
         pairs = {
             "adapter commit": (
@@ -101,15 +155,16 @@ def check_evidence(
 
 
 def require_merged_adapter(harbor_src: Path, commit: str) -> None:
-    """Require release provenance on the current remote adapters history."""
+    """Require release provenance on the official Osmosis-AI adapters history."""
     git = ("git", "-C", str(harbor_src))
     remote_tip = run(
-        *git, "ls-remote", "--exit-code", "origin", "refs/heads/adapters"
+        *git, "ls-remote", "--exit-code", HARBOR_REPOSITORY, "refs/heads/adapters"
     ).split()[0]
     tracking_tip = run(*git, "rev-parse", "refs/remotes/origin/adapters")
     if tracking_tip != remote_tip:
         raise ValueError(
-            "Hardened releases require a fresh origin/adapters; "
+            "Hardened releases require a fresh origin/adapters from official Osmosis-AI/harbor; "
+            f"verify origin points to {HARBOR_REPOSITORY}, then "
             "run git fetch origin adapters in the Harbor checkout and retry"
         )
     if (
@@ -126,7 +181,9 @@ def require_merged_adapter(harbor_src: Path, commit: str) -> None:
 def require_upstream_source(loca_src: Path, commit: str) -> None:
     """Require generation to use a clean checkout at the pinned upstream commit."""
     git = ("git", "-C", str(loca_src))
-    require_equal("generation upstream checkout", run(*git, "rev-parse", "HEAD"), commit)
+    require_equal(
+        "generation upstream checkout", run(*git, "rev-parse", "HEAD"), commit
+    )
     if run(*git, "status", "--porcelain", "--untracked-files=all"):
         raise ValueError("Release provenance requires a clean LOCA upstream checkout")
 
@@ -184,9 +241,73 @@ def source_contract(harbor_src: Path, image: str) -> dict:
     return expected
 
 
-IMAGE_PROBE = """
-import hashlib, json, subprocess
+def expected_upstream_tree(
+    harbor_src: Path, expected: dict, loca_src: Path | None
+) -> dict:
+    """Export pinned Git objects and apply audited patches without editing the source."""
+    with tempfile.TemporaryDirectory(prefix="loca-release-tree-") as temporary:
+        root = Path(temporary)
+        source = loca_src
+        if source is None:
+            source = root / "objects"
+            subprocess.run(["git", "init", "--quiet", str(source)], check=True)
+            subprocess.run(
+                [
+                    "git",
+                    "-C",
+                    str(source),
+                    "fetch",
+                    "--quiet",
+                    "--depth=1",
+                    expected["upstream_repository"],
+                    expected["upstream_commit"],
+                ],
+                check=True,
+            )
+        archive = root / "source.tar"
+        with archive.open("wb") as output:
+            subprocess.run(
+                [
+                    "git",
+                    "--no-replace-objects",
+                    "-C",
+                    str(source),
+                    "archive",
+                    "--format=tar",
+                    expected["upstream_commit"],
+                ],
+                stdout=output,
+                check=True,
+            )
+        tree = root / "tree"
+        tree.mkdir()
+        with tarfile.open(archive) as contents:
+            contents.extractall(tree, filter="data")
+        adapter = harbor_src / "adapters/loca-bench"
+        manifest = (adapter / "patch-manifest.json").read_bytes()
+        require_equal(
+            "source patch manifest",
+            hashlib.sha256(manifest).hexdigest(),
+            expected["patch_manifest_sha256"],
+        )
+        for patch in json.loads(manifest)["patches"]:
+            path = adapter / patch["file"]
+            require_equal(
+                patch["file"],
+                hashlib.sha256(path.read_bytes()).hexdigest(),
+                patch["sha256"],
+            )
+            subprocess.run(["git", "-C", str(tree), "apply", str(path)], check=True)
+        return upstream_tree(tree)
+
+
+IMAGE_PROBE = (
+    """
+import hashlib, json, os, stat, subprocess
 from pathlib import Path
+"""
+    + inspect.getsource(upstream_tree)
+    + """
 from loca_bench.task_index import load_task_index, task_index_sha256
 root = Path('/opt/loca-harbor')
 print(json.dumps({
@@ -194,8 +315,10 @@ print(json.dumps({
     'upstream_commit': subprocess.check_output(['git', '-C', '/opt/loca-upstream', 'rev-parse', 'HEAD'], text=True).strip(),
     'task_index_sha256': task_index_sha256(load_task_index(root / 'task-index.json')),
     'patch_manifest_sha256': hashlib.sha256((root / 'patch-manifest.json').read_bytes()).hexdigest(),
+    'upstream_tree': upstream_tree(Path('/opt/loca-upstream')) if json.loads((root / 'runtime-contract.json').read_text())['runtime_contract_version'] >= 2 else None,
 }))
 """
+)
 
 
 def main() -> None:
@@ -215,6 +338,12 @@ def main() -> None:
         require_merged_adapter(args.harbor_src.resolve(), expected["adapter_commit"])
     if args.loca_src is not None:
         require_upstream_source(args.loca_src.resolve(), expected["upstream_commit"])
+    if expected["runtime_contract_version"] >= 2:
+        expected["upstream_tree"] = expected_upstream_tree(
+            args.harbor_src.resolve(),
+            expected,
+            args.loca_src.resolve() if args.loca_src else None,
+        )
     manifest = None
     if args.dataset_dir is not None:
         manifests = list((args.dataset_dir / "manifests").glob("loca-bench-*.json"))
@@ -242,6 +371,7 @@ def main() -> None:
             "--entrypoint",
             "python",
             args.runtime_image,
+            "-B",
             "-c",
             IMAGE_PROBE,
         )
