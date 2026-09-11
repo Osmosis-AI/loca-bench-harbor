@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dataset": {
     "name": "loca-bench",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "task_count": 525,
     "git_commit": null
   },
@@ -12,13 +12,13 @@
   },
   "adapter": {
     "repository": "Osmosis-AI/harbor",
-    "commit": "ae9f2b9e9af74d3a351cd8c00770b14580209c69",
-    "contract_version": 1,
-    "agent": "loca-official-react@1.3.0+loca.8b6fac49",
+    "commit": "6aa1286c631d738c78a5106a08a6a79a13a0ffcd",
+    "contract_version": 2,
+    "agent": "loca-official-react@2.0.0+loca.8b6fac49",
     "result_task_name_prefix": "osmosis-ai/loca-bench__"
   },
   "runtime": {
-    "image": "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df",
+    "image": "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:2a98f80cb31d49a5bb9687f451296e77c496ef921ebf250384d3f444cd3448da",
     "task_index_sha256": "75b60fef94b54d59bd3cd0a0d5c065e40a0fa959a5661ccabe20e6a81ea330f2"
   },
   "matrix": {
@@ -35,7 +35,7 @@
     ]
   },
   "profile": {
-    "name": "loca-official-react-v1",
+    "name": "loca-hardened-react-v2",
     "strategy": "react",
     "context_reset": false,
     "context_summary": false,
