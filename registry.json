@@ -1,7 +1,7 @@
 [
   {
     "name": "loca-bench",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Full LOCA-bench matrix: 15 families x 7 EDL x 5 seeds.",
     "tasks": [
       {
@@ -2108,7 +2108,7 @@
   },
   {
     "name": "loca-bench-smoke",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Eight-task deployment smoke across low, mid, and extreme EDL.",
     "tasks": [
       {
@@ -2147,7 +2147,7 @@
   },
   {
     "name": "loca-bench-core",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "8K, 64K, and 256K EDL across all families and seeds.",
     "tasks": [
       {
@@ -3054,7 +3054,7 @@
   },
   {
     "name": "loca-bench-8k",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "8K EDL slice: all families and seeds.",
     "tasks": [
       {
@@ -3361,7 +3361,7 @@
   },
   {
     "name": "loca-bench-64k",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "64K EDL slice: all families and seeds.",
     "tasks": [
       {
@@ -3668,7 +3668,7 @@
   },
   {
     "name": "loca-bench-128k",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "128K EDL slice: all families and seeds.",
     "tasks": [
       {
@@ -3975,7 +3975,7 @@
   },
   {
     "name": "loca-bench-256k",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "256K EDL slice: all families and seeds.",
     "tasks": [
       {

@@ -3,7 +3,7 @@ source = "https://github.com/hkust-nlp/LOCA-bench/tree/8b6fac49d9edd92922593e703
 
 [task]
 name = "osmosis-ai/loca-bench__loca__canvas-list-test__edl-096k__seed-2024"
-version = "1.3.0"
+version = "1.4.0"
 description = "LOCA-bench CanvasListTestS2LEnv at 96K EDL, seed 2024"
 keywords = ["loca-bench", "long-context", "tool-use", "react"]
 
@@ -16,9 +16,9 @@ edl_label = "096k"
 seed = 2024
 upstream_commit = "8b6fac49d9edd92922593e703b74ea255357c3ec"
 config_sha256 = "b1507a027902aa871b58b2e0d4590ec2dda7b87dd525237eaf6d483133f49c3e"
-dataset_version = "1.3.0"
-runtime_contract_version = 1
-scaffold = "loca-official-react-v1"
+dataset_version = "1.4.0"
+runtime_contract_version = 2
+scaffold = "loca-hardened-react-v2"
 
 [agent]
 # Per-EDL wall clock (contract.AGENT_TIMEOUT_SEC_BY_EDL). run_one.py stops the
@@ -32,15 +32,15 @@ environment_mode = "shared"
 
 [environment]
 network_mode = "public"
-docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df"
+docker_image = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:2a98f80cb31d49a5bb9687f451296e77c496ef921ebf250384d3f444cd3448da"
 workdir = "/workspace"
 cpus = 4
 memory_mb = 8192
 storage_mb = 20480
-env = { LOCA_TASK_ID = "loca__canvas-list-test__edl-096k__seed-2024", LOCA_TASK_SPEC_SHA256 = "b1507a027902aa871b58b2e0d4590ec2dda7b87dd525237eaf6d483133f49c3e", LOCA_DATASET_VERSION = "1.3.0", LOCA_RUNTIME_CONTRACT_VERSION = "1", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:8c4e4b61fd1450440620bc998353616d6d8781fc9f8e990bf53b1bb5c395e7df", LOCA_EPISODE_BUDGET_SEC = "10500" }
+env = { LOCA_TASK_ID = "loca__canvas-list-test__edl-096k__seed-2024", LOCA_TASK_SPEC_SHA256 = "b1507a027902aa871b58b2e0d4590ec2dda7b87dd525237eaf6d483133f49c3e", LOCA_DATASET_VERSION = "1.4.0", LOCA_RUNTIME_CONTRACT_VERSION = "2", LOCA_RUNTIME_IMAGE = "ghcr.io/osmosis-ai/loca-bench-runtime@sha256:2a98f80cb31d49a5bb9687f451296e77c496ef921ebf250384d3f444cd3448da", LOCA_EPISODE_BUDGET_SEC = "10500" }
 
 [environment.healthcheck]
 command = "python /opt/loca-harbor/preflight.py"
-timeout_sec = 30.0
+timeout_sec = 120.0
 interval_sec = 2.0
 retries = 3
